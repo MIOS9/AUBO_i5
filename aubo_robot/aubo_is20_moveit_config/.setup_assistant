@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: aubo_description
+    relative_path: urdf/aubo_iS20.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/aubo_iS20.srdf
+  CONFIG:
+    author_name: rongqi.gu
+    author_email: rongqi.gu@westwell-lab.com
+    generated_timestamp: 1704874554

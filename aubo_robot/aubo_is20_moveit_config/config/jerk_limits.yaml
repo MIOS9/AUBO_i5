@@ -1,0 +1,13 @@
+# 6.457718,6.457718,10.367256,20.594885,20.594885,20.594885
+foreArm_joint:
+  jerk_limit: 100
+shoulder_joint:
+  jerk_limit: 100
+upperArm_joint:
+  jerk_limit: 100
+wrist1_joint:
+  jerk_limit: 200
+wrist2_joint:
+  jerk_limit: 200
+wrist3_joint:
+  jerk_limit: 200

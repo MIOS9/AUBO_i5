@@ -1,0 +1,54 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+
+# For beginners, we downscale velocity and acceleration limits.
+# You can always specify higher scaling factors (<= 1.0) in your motion requests.  # Increase the values below to 1.0 to always move at maximum speed.
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+# joint maxvelc({1.623156,1.623156,3.106686,3.106686,3.106686,3.106686})
+# joint maxacc({6.457718,6.457718,10.367256,20.594885,20.594885,20.594885})
+joint_limits:
+  foreArm_joint:
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 8
+    min_position: -3.05258081
+    max_position: 3.05258081
+  shoulder_joint:
+    has_velocity_limits: true
+    max_velocity: 1.6
+    has_acceleration_limits: true
+    max_acceleration: 5
+    min_position: -6.28
+    max_position: 6.28
+  upperArm_joint:
+    has_velocity_limits: true
+    max_velocity: 1.6
+    has_acceleration_limits: true
+    max_acceleration: 5
+    min_position: -3.05258081
+    max_position: 3.05258081
+  wrist1_joint:
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 16
+    min_position: -3.05258081
+    max_position: 3.05258081
+  wrist2_joint:
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 16
+    min_position: -3.05258081
+    max_position: 3.05258081    
+  wrist3_joint:
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 16
+    min_position: -6.28
+    max_position: 6.28 

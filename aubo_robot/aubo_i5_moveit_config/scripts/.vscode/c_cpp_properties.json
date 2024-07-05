@@ -1,0 +1,47 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ipc-robot/aubo_8_ws/devel/include/**",
+        "/home/ipc-robot/ws_moveit/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/aubo_robot/aubo_controller/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/aubo_robot/aubo_driver/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/aubo_robot/aubo_kinematics/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/aubo_robot/aubo_msgs/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_planners/chomp/chomp_motion_planner/include/**",
+        "/home/ipc-robot/ws_moveit/src/geometric_shapes/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/industrial_core/industrial_robot_client/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/industrial_core/industrial_trajectory_filters/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/industrial_core/industrial_utils/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_planners/chomp/chomp_interface/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit_resources/prbt_ikfast_manipulator_plugin/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_ros/benchmarks/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_plugins/moveit_ros_control_interface/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_ros/move_group/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_ros/occupancy_map_monitor/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_ros/robot_interaction/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_ros/moveit_servo/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_setup_assistant/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_plugins/moveit_simple_controller_manager/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit_visual_tools/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner/include/**",
+        "/home/ipc-robot/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner_testutils/include/**",
+        "/home/ipc-robot/ws_moveit/src/rviz_visual_tools/include/**",
+        "/home/ipc-robot/aubo_8_ws/src/aubo_robot/industrial_core/simple_message/include/**",
+        "/home/ipc-robot/ws_moveit/src/srdfdom/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
