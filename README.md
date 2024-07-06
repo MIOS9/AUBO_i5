@@ -19,10 +19,20 @@ bash Anaconda2-4.3.0-Linux-x86_64.sh
 * 确认好anaconda3的安装路径后，回车安装。  
 **安装完成后，收到加入环境变量的提示信息，输入no**  
 ### 2.3 设置手动激活conda的工作空间  
-`sudo gedit ~/.bashrc`  
+```
+sudo gedit ~/.bashrc
+```  
 在文件最后添加  
-`alias setconda='. ~/anaconda3/bin/activate'`  
+```
+alias setconda='. ~/anaconda3/bin/activate'
+```
 这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
 
 ## setup 3. 配置 AUBO 工作空间
-`mkdir -p ~/aubo_ws/src`创建一个工作空间，并进入src文件夹`cd ~/aubo_ws/src`
+```
+mkdir -p ~/aubo_ws/src
+```
+创建一个工作空间，并进入src文件夹
+```
+cd ~/aubo_ws/src
+```
