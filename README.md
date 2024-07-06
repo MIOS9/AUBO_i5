@@ -19,4 +19,5 @@ Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaco
 ### 2.3 设置手动激活conda的工作空间  
 `sudo gedit ~/.bashrc`  
 在文件最后添加  
-`alias setconda='. ~/anaconda3/bin/activate'`
+`alias setconda='. ~/anaconda3/bin/activate'`  
+这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
