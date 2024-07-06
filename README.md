@@ -47,10 +47,10 @@ catkin_make
 ```
 
 # AUBO Python SDK 安装指南 
-## setup 3. 安装 anaconda
-### 3.1 下载 anaconda  
+## setup 1. 安装 anaconda
+### 1.1 下载 anaconda  
 Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
-### 3.2 安装 anaconda  
+### 1.2 安装 anaconda  
 ```
 bash Anaconda2-4.3.0-Linux-x86_64.sh
 ```
@@ -58,7 +58,7 @@ bash Anaconda2-4.3.0-Linux-x86_64.sh
 * 然后一直按回车，直到再次出现输入框，然后输入yes。  
 * 确认好anaconda3的安装路径后，回车安装。  
 **安装完成后，收到加入环境变量的提示信息，输入no**  
-### 3.3 设置手动激活conda的工作空间  
+### 1.3 设置手动激活conda的工作空间  
 ```
 sudo gedit ~/.bashrc
 ```  
@@ -67,3 +67,12 @@ sudo gedit ~/.bashrc
 alias setconda='. ~/anaconda3/bin/activate'
 ```
 这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
+
+## setup 2. 配置 libpyaubo
+### 2.1 创建一个conda环境，python版本为3.11。
+```
+setconda
+conda create -n pyaubo python=3.11
+```
+
+
