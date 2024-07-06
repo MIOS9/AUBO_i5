@@ -1,4 +1,4 @@
-# AUBO i5 ROS(Noetic) 安装指南
+# AUBO i5 ROS(Noetic) Fixed 安装指南
 
 ## setup 1. 安装 ROS(Noetic)
 通过鱼香ROS一键配置ROS
