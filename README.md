@@ -7,7 +7,7 @@ Configuration guide for AUBO_I5 (ROS and PYTHON SDK)
 通过鱼香ROS一键配置ROS
 `wget http://fishros.com/install -O fishros && . fishros`
 
-## setup 2. install anaconda
+## setup 2. 安装 anaconda
 ### 2.1 下载 anaconda  
 Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
 ### 2.2 安装 anaconda  
@@ -21,3 +21,6 @@ Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaco
 在文件最后添加  
 `alias setconda='. ~/anaconda3/bin/activate'`  
 这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
+
+## setup 3. 配置 AUBO 工作空间
+`mkdir -p ~/aubo_ws/src`  
