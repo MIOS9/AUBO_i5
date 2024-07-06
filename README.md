@@ -5,7 +5,9 @@ Configuration guide for AUBO_I5 (ROS and PYTHON SDK)
 
 ## setup 1. 安装 ROS(Noetic)
 通过鱼香ROS一键配置ROS
-`wget http://fishros.com/install -O fishros && . fishros`
+```
+wget http://fishros.com/install -O fishros && . fishros
+```
 
 ## setup 2. 配置 AUBO 工作空间
 ### 2.1 安装 git
