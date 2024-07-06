@@ -29,6 +29,11 @@ alias setconda='. ~/anaconda3/bin/activate'
 这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
 
 ## setup 3. 配置 AUBO 工作空间
+### 3.1 安装 git
+```
+sudo apt install git
+```
+### 3.2 克隆 AUBO_Robot 仓库
 ```
 mkdir -p ~/aubo_ws/src
 ```
