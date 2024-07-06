@@ -7,33 +7,12 @@ Configuration guide for AUBO_I5 (ROS and PYTHON SDK)
 通过鱼香ROS一键配置ROS
 `wget http://fishros.com/install -O fishros && . fishros`
 
-## setup 2. 安装 anaconda
-### 2.1 下载 anaconda  
-Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
-### 2.2 安装 anaconda  
-```
-bash Anaconda2-4.3.0-Linux-x86_64.sh
-```
-* 进入注册信息页面，输入yes   
-* 然后一直按回车，直到再次出现输入框，然后输入yes。  
-* 确认好anaconda3的安装路径后，回车安装。  
-**安装完成后，收到加入环境变量的提示信息，输入no**  
-### 2.3 设置手动激活conda的工作空间  
-```
-sudo gedit ~/.bashrc
-```  
-在文件最后添加  
-```
-alias setconda='. ~/anaconda3/bin/activate'
-```
-这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
-
-## setup 3. 配置 AUBO 工作空间
-### 3.1 安装 git
+## setup 2. 配置 AUBO 工作空间
+### 2.1 安装 git
 ```
 sudo apt install git
 ```
-### 3.2 克隆 AUBO_Robot 仓库
+### 2.2 克隆 AUBO_Robot 仓库
 ```
 mkdir -p ~/aubo_ws/src
 ```
@@ -42,7 +21,7 @@ mkdir -p ~/aubo_ws/src
 cd ~/aubo_ws/src
 git clone https://github.com/AuboRobot/aubo_robot
 ```  
-### 3.3 安装ROS依赖
+### 2.3 安装ROS依赖
 ```
 cd ~/aubo_ws/src
 sudo rosdep init
@@ -53,13 +32,35 @@ rosdep update
 rosdep install -y --from-paths . --ignore-src --rosdistro noetic -r
 ```
 
-### 3.3 软连接 libral.so
+### 2.4 软连接 libaral.so
+```
+sudo gedit /etc/ld.so.conf
+```
+在文件的最后一行加上`/home/ipc-robot/aubo_ws/src/aubo_robot/aubo_robot/aubo_driver/lib/lib64/aubocontroller`，其中ipc-robot替换为你的用户名。
+
+### 2.5 编译工作空间
 ```
 cd ~/aubo_ws
 catkin_make
 ```
-### 3.3 编译工作空间
+
+## setup 3. 安装 anaconda
+### 3.1 下载 anaconda  
+Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
+### 3.2 安装 anaconda  
 ```
-cd ~/aubo_ws
-catkin_make
+bash Anaconda2-4.3.0-Linux-x86_64.sh
 ```
+* 进入注册信息页面，输入yes   
+* 然后一直按回车，直到再次出现输入框，然后输入yes。  
+* 确认好anaconda3的安装路径后，回车安装。  
+**安装完成后，收到加入环境变量的提示信息，输入no**  
+### 3.3 设置手动激活conda的工作空间  
+```
+sudo gedit ~/.bashrc
+```  
+在文件最后添加  
+```
+alias setconda='. ~/anaconda3/bin/activate'
+```
+这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
