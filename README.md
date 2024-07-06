@@ -11,7 +11,7 @@ Configuration guide for AUBO_I5 (ROS and PYTHON SDK)
 ### 2.1 下载 anaconda  
 Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
 ### 2.2 安装 anaconda  
-`bash Anaconda2-4.3.0-Linux-x86_64.sh`  
+```bash Anaconda2-4.3.0-Linux-x86_64.sh```
 进入注册信息页面，输入yes   
 然后一直按回车，直到再次出现输入框，然后输入yes。  
 确认好anaconda3的安装路径后，回车安装。  
