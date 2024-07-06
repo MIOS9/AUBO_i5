@@ -48,6 +48,11 @@ cd ~/aubo_ws/src
 sudo rosdep init
 rosdep update
 ```
+看到`all required rosdeps installed successfully`后可以利用`rosdep`安装依赖。
+```
+rosdep install -y --from-paths . --ignore-src --rosdistro noetic -r
+```
+
 ### 3.3 软连接 libral.so
 ```
 cd ~/aubo_ws
