@@ -46,6 +46,7 @@ cd ~/aubo_ws
 catkin_make
 ```
 
+# AUBO Python SDK 安装指南 
 ## setup 3. 安装 anaconda
 ### 3.1 下载 anaconda  
 Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/> 
