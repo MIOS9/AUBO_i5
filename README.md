@@ -23,4 +23,4 @@ Anaconda下载地址(清华镜像)：<https://mirrors.tuna.tsinghua.edu.cn/anaco
 这样，终端默认使用ROS的python路径，在需要时可以通过`setconda`来进入conda工作空间。
 
 ## setup 3. 配置 AUBO 工作空间
-`mkdir -p ~/aubo_ws/src`  
+`mkdir -p ~/aubo_ws/src`创建一个工作空间，并进入src文件夹`cd ~/aubo_ws/src`
