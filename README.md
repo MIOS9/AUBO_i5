@@ -37,7 +37,8 @@ sudo apt install git
 ```
 mkdir -p ~/aubo_ws/src
 ```
-创建一个工作空间，并进入src文件夹
+创建一个工作空间，并进入src文件夹，克隆仓库
 ```
 cd ~/aubo_ws/src
+git clone https://github.com/AuboRobot/aubo_robot
 ```
