@@ -42,6 +42,13 @@ mkdir -p ~/aubo_ws/src
 cd ~/aubo_ws/src
 git clone https://github.com/AuboRobot/aubo_robot
 ```
+
+### 3.4 安装ROS依赖
+```
+cd ~/aubo_ws/src
+sudo rosdep init
+rosdep update
+```
 ### 3.3 编译工作空间
 ```
 cd ~/aubo_ws
