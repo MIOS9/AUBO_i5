@@ -11,14 +11,15 @@ wget http://fishros.com/install -O fishros && . fishros
 ```
 sudo apt install git
 ```
-### 2.2 克隆 AUBO_Robot 仓库
+### 2.2 克隆本仓库被工程师修补的驱动  
+创建一个工作空间，并进入src文件夹
 ```
 mkdir -p ~/aubo_ws/src
-```
-创建一个工作空间，并进入src文件夹，克隆仓库
-```
 cd ~/aubo_ws/src
-git clone https://github.com/AuboRobot/aubo_robot
+```
+克隆本仓库被工程师修补的驱动，官方仓库地址：`https://github.com/AuboRobot/aubo_robot`
+```
+git clone https://github.com/MIOS9/aubo_robot.git
 ```  
 ### 2.3 安装ROS依赖
 ```
