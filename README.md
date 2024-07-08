@@ -37,7 +37,9 @@ rosdep install -y --from-paths . --ignore-src --rosdistro noetic -r
 sudo gedit /etc/ld.so.conf
 ```
 在文件的最后一行加上`/home/ipc-robot/aubo_ws/src/aubo_robot/aubo_robot/aubo_driver/lib/lib64/aubocontroller`，其中ipc-robot替换为你的用户名。
-
+```
+sudo /sbin/ldconfig -v
+```
 ### 2.5 编译工作空间
 ```
 cd ~/aubo_ws
