@@ -32,6 +32,7 @@ rosdep update
 rosdep install -y --from-paths . --ignore-src --rosdistro noetic -r
 ```
 ### 2.4 clone 本仓库，将lib64中的aubocontroller下的所有文件删除，用dependents替换。
+### 2.5 修改aubodriver的CmakeList，将aubocontroller改为aubo_sdk
 ### 2.5 软连接 libaral.so
 ```
 sudo gedit /etc/ld.so.conf
