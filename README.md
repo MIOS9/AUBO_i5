@@ -17,9 +17,9 @@ sudo apt install git
 mkdir -p ~/aubo_ws/src
 cd ~/aubo_ws/src
 ```
-克隆本仓库被工程师修补的驱动，官方仓库地址：`https://github.com/AuboRobot/aubo_robot`
+克隆官方仓库地址：`https://github.com/AuboRobot/aubo_robot`
 ```
-git clone https://github.com/MIOS9/aubo_robot.git
+git clone https://github.com/AuboRobot/aubo_robot.git
 ```  
 ### 2.3 安装ROS依赖
 ```
@@ -31,8 +31,8 @@ rosdep update
 ```
 rosdep install -y --from-paths . --ignore-src --rosdistro noetic -r
 ```
-
-### 2.4 软连接 libaral.so
+### 2.4 clone 本仓库，将lib64中的aubocontroller下的所有文件删除，用dependents替换。
+### 2.5 软连接 libaral.so
 ```
 sudo gedit /etc/ld.so.conf
 ```
@@ -40,7 +40,7 @@ sudo gedit /etc/ld.so.conf
 ```
 sudo /sbin/ldconfig -v
 ```
-### 2.5 编译工作空间
+### 2.6 编译工作空间
 ```
 cd ~/aubo_ws
 catkin_make
